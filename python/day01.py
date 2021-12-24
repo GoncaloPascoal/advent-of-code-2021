@@ -25,6 +25,7 @@ def count_increases_sliding_window(depths):
 
 f = open('../data/day01.txt', 'r')
 depths = list(map(int, f.readlines()))
+f.close()
 
 print(count_increases(depths))
 print(count_increases_sliding_window(depths))
